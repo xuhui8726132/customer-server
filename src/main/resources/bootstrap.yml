@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: customer
+  cloud:
+    config:
+      name: customer
+      profile: dev
+
+eureka:
+  client:
+  #由于注册中心的职责就是维护服务实例,它并不需要去检索服务,所以也设置为false
+  serviceUrl:
+    defaultZone: http://localhost:1111/eureka/
+
+
