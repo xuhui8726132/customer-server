@@ -9,6 +9,6 @@ public class MainController {
     @RequestMapping("/main")
     @ResponseBody
     public String hello(){
-        return "hello";
+        return "customer  hello";
     }
 }
